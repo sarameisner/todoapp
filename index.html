@@ -14,32 +14,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Reminders Column (form input) -->
-        <div class="column reminders">
-            <h2>Reminders</h2>
-            <form id="task-form">
-                <input type="text" id="task-input" placeholder="New task" required>
-                <label for="priority-input">Priority:</label>
-                <select id="priority-input" required>
-                    <option value="High">High</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Low">Low</option>
-                </select>
-                <button type="submit">Add task</button>
-            </form>
-        </div>
+    <div class="paper-background">
 
-        <!-- ToDo Column (tasks that are not done) -->
-        <div class="column todo">
-            <h2>To do</h2>
-            <ul id="todo-list"></ul>
-        </div>
 
-        <!-- Done Column (completed tasks) -->
-        <div class="column done">
-            <h2>Done</h2>
-            <ul id="done-list"></ul>
+        <div class="heart-container heart-1">
+            <img src="hjerte1.svg" alt="Heart Image">
+        </div>
+        <div class="heart-container heart-2">
+            <img src="hjerte2.svg" alt="Heart Image">
+        </div>
+        <div class="heart-container heart-3">
+            <img src="heart3.svg" alt="Heart Image">
+        </div>
+        <div class="container">
+            <div class="column reminders">
+                <h2>Reminders</h2>
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="New task" required>
+                    <label for="priority-input">Priority:</label>
+                    <select id="priority-input" required>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <button type="submit" class="add-task-btn">Add task</button>
+                </form>
+            </div>
+
+            <div class="column todo">
+                <h2>To do</h2>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <div class="column done">
+                <h2>Done</h2>
+                <ul id="done-list"></ul>
+            </div>
         </div>
     </div>
 

@@ -30,7 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     todoList.innerHTML = "";
     doneList.innerHTML = "";
 
-    tasks.forEach((task) => addTaskToDOM(task, task.done));
+    const sortedTasks = tasks.slice().sort((a, b) => {
+      const priorityOrder = { High: 1, Medium: 2, Low: 3 };
+      return priorityOrder[a.priority] - priorityOrder[b.priority];
+    });
+
+    sortedTasks.forEach((task) => addTaskToDOM(task, task.done));
   }
 
   function addTaskToDOM(task, isDone) {
