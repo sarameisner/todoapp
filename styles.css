@@ -286,4 +286,7 @@ li {
   .delete-btn {
     align-self: flex-end;
   }
+  img {
+    display: none;
+  }
 }
