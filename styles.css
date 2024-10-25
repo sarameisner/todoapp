@@ -40,16 +40,16 @@ body {
 
 .heart-1 {
   top: 350px;
-  right: 769px;
+  right: 699px;
   transform: rotate(345deg);
-  width: 115px;
+  width: 122px;
 }
 
 .heart-2 {
-  top: 25px;
-  left: 50px;
-  transform: rotate(-10deg);
-  width: 130px;
+  top: 18px;
+  left: 17px;
+  transform: rotate(-20deg);
+  width: 133px;
 }
 
 .heart-3 {
@@ -244,6 +244,24 @@ li {
   align-items: center;
   justify-content: center;
   width: auto;
+}
+
+.get-rich {
+  position: absolute;
+  bottom: 112px;
+  right: -105px;
+  width: 200px;
+  opacity: 0.8;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.get-rich:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 1;
+}
+
+.get-rich img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
